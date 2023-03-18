@@ -1,0 +1,38 @@
+:root {
+  --theme-purple: #9e29c8;
+  --theme-green: #00db8c;
+  
+  --bg-dark-100: #0d0d0d;
+  --bg-dark-200: #151515;
+  
+  --bg-light-100: #f4f4f4;
+  --bg-light-200: #e9e9e9;
+
+  --font-light: #272727;
+  --font-dark: #b9b9b9;
+  
+  --gradient: linear-gradient(90deg, var(--theme-purple), var(--theme-green));
+}
+
+body {
+  background: var(--bg-100);
+  color: var(--font-light);
+
+  --bg-100: var(--bg-light-100);
+  --bg-200: var(--bg-light-200);
+
+  --icon-filter: invert(100%);
+  --icon-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(92%) saturate(2462%) hue-rotate(273deg) brightness(70%) contrast(97%);
+
+}
+
+body.dark {
+  background: var(--bg-100);
+  color: var(--font-dark);
+
+  --bg-100: var(--bg-dark-100);
+  --bg-200: var(--bg-dark-200);
+
+  --icon-filter: invert(0%);
+  --icon-filter-hover: brightness(0) saturate(100%) invert(58%) sepia(93%) saturate(1193%) hue-rotate(111deg) brightness(97%) contrast(101%);
+}

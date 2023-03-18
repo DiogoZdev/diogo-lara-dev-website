@@ -1,0 +1,25 @@
+.network-links {
+  padding-top: 1rem;
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  gap: 2.5rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover img {
+      filter: var(--icon-filter-hover)
+    }
+  }
+
+  img {
+    width: 20px;
+  }
+
+  .icon {
+    filter: var(--icon-filter)
+  }
+}
