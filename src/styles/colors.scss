@@ -14,9 +14,11 @@
   --gradient: linear-gradient(90deg, var(--theme-purple), var(--theme-green));
 }
 
-body {
+body.light {
   background: var(--bg-100);
-  color: var(--font-light);
+  --text: var(--font-light);
+
+  --color-accent: var(--theme-purple);
 
   --bg-100: var(--bg-light-100);
   --bg-200: var(--bg-light-200);
@@ -24,15 +26,21 @@ body {
   --icon-filter: invert(100%);
   --icon-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(92%) saturate(2462%) hue-rotate(273deg) brightness(70%) contrast(97%);
 
+  --shadow: 0 4px 4px #2221;
 }
 
 body.dark {
   background: var(--bg-100);
-  color: var(--font-dark);
+  --text: var(--font-dark);
+
+  --color-accent: var(--theme-green);
 
   --bg-100: var(--bg-dark-100);
   --bg-200: var(--bg-dark-200);
 
   --icon-filter: invert(0%);
   --icon-filter-hover: brightness(0) saturate(100%) invert(58%) sepia(93%) saturate(1193%) hue-rotate(111deg) brightness(97%) contrast(101%);
+
+
+  --shadow: none;
 }

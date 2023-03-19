@@ -22,4 +22,12 @@
   .icon {
     filter: var(--icon-filter)
   }
+
+  .icon.dark-icons {
+    filter: invert(90%)
+  }
+
+  .icon.light-icons {
+    filter: invert(0%)
+  }
 }

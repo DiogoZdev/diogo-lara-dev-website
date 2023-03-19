@@ -3,7 +3,7 @@ import { NetworkModule } from "../network/network.module";
 import { HeaderComponent } from "./header.component";
 
 @NgModule({
-  imports: [NetworkModule],
+  imports: [ NetworkModule ],
   declarations: [ HeaderComponent ],
   exports:[ HeaderComponent ],
 })

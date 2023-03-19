@@ -1,0 +1,33 @@
+<div class="form-area">
+  <form [formGroup]="form">
+    <h2>Entre em contato</h2>
+      <div class="inputs">
+        <div class="input-area">
+          <input placeholder="Nome" type="text" formControlName="name">
+        </div>
+        <div class="small-inputs">
+          <div class="input-area">
+            <input placeholder="Email" type="text" formControlName="email">
+          </div>
+          <div class="input-area">
+            <input placeholder="Telefone (opcional)" type="text" formControlName="phone">
+          </div>
+        </div>
+        <div class="input-area">
+          <input placeholder="Empresa (opcional)" type="text" formControlName="company">
+        </div>
+        <div class="input-area">
+          <textarea placeholder="Mensagem ..." rows="8" maxlength="1000" formControlName="message" ></textarea>
+        </div>
+        <div class="counter">{{form.get('message')?.value.length}} /1000</div>
+      </div>
+      <div class="button-area">
+        <button class="send" (click)="sendFormResponse()">enviar</button>
+      </div>
+  </form>
+</div>
+<footer>
+  <div class="center">
+    <app-network iconsClass="light-icons"></app-network>
+  </div>
+</footer>

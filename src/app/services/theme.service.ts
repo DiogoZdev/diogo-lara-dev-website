@@ -5,9 +5,9 @@ import { Injectable } from "@angular/core";
 })
 export class ThemeService {
 
-  theme = "light"
+  theme = "dark"
 
-  setLocalStorageTheme(theme: string) {
+  defineTheme(theme: string) {
     localStorage.setItem("theme", theme);
     this.setAppTheme(theme);
   }
@@ -27,6 +27,7 @@ export class ThemeService {
     document.body.classList.remove("dark");
 
     document.body.classList.add(theme);
+    this.theme = theme;
   }
 
 
