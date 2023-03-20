@@ -9,7 +9,7 @@
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
-   sodipodi:docname="diogo-sketch"
+   sodipodi:docname="diogo-dark.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.1993833"
-     inkscape:cx="55.028282"
-     inkscape:cy="70.035995"
+     inkscape:cx="55.02828"
+     inkscape:cy="136.73694"
      inkscape:window-width="1366"
      inkscape:window-height="731"
      inkscape:window-x="0"
@@ -40,12 +40,7 @@
      id="layer1"
      transform="translate(-54.432287,-26.963)"><g
        id="g555"><g
-         id="g4434"><circle
-           style="fill:#151515;fill-opacity:1;stroke:none;stroke-width:3.565;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
-           id="path3325"
-           cx="84.291687"
-           cy="66.087471"
-           r="29.8594" /><path
+         id="g4434"><path
            style="fill:#f4e4f7;fill-opacity:1;stroke:none;stroke-width:0.61361px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 98.720687,72.15352 6.090303,8.278375 -8.209673,13.126367 -2.69267,-2.647459 -9.957562,-5.471288 z"
            id="path662" /><path

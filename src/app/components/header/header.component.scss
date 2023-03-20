@@ -4,12 +4,26 @@ header {
   .center {
     width: fit-content;
 
+    .circle {
+      position: relative;
+      background: var(--bg-200);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
     .diogo {
       width: 180px;
       margin: 0 auto;
     }
 
     h1,h2 {
+      position: relative;
       margin: 0 auto;
     }
 
