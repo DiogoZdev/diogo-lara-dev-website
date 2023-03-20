@@ -10,6 +10,7 @@ import { HeaderModule } from './components/header/header.module';
 import { MenuModule } from './components/menu/menu.module';
 import { NetworkModule } from './components/network/network.module';
 import { ThemeService } from './services/theme.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ThemeService } from './services/theme.service';
     HeaderModule,
     AboutModule,
     FormModule,
+    BrowserAnimationsModule,
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

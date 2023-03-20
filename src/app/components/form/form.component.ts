@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ContactService } from "src/app/services/contact.service";
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   templateUrl: './form.component.html',
@@ -12,6 +13,7 @@ export class FormComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private contactService: ContactService,
+    private snackbar: MatSnackBar
   ) { }
 
   public form!: FormGroup
@@ -29,16 +31,16 @@ export class FormComponent implements OnInit {
 
   sendFormResponse() {
     if (!this.form.valid) {
-      alert("verifique se os dados foram preenchidos corretamente");
+      this.snackbar.open("Formulário inválido", "x", {duration: 3000, panelClass: 'snackbar-warn'})
       return
     };
 
     this.contactService.sendresponse(this.form.value)
     .then(() => {
-      alert("Mesagem enviada")
+      this.snackbar.open("Mensagem enviada", "x", {duration: 2000, panelClass: 'snackbar-success'})
       this.clearForm()
     }).catch((err) => {
-      alert("Ocorreu um erro ao enviar a mensagem")
+      this.snackbar.open("Ocoreu um erro :(", "x", {duration: 3000, panelClass: 'snackbar-error'})
     })
   }
 

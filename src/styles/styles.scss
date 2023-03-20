@@ -45,3 +45,35 @@ img {
     padding: 1rem;
   }
 }
+
+@mixin snackbar-default {
+  position: fixed;
+  z-index: 999;
+  right: 2rem;
+  bottom: 2rem;
+  color: #000;
+  font-weight: normal;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px #0003;
+
+  @media (max-width: 600px) {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.snackbar-success {
+  @include snackbar-default;
+  background: linear-gradient(90deg, #25F3AA, #05AD8F);
+}
+
+.snackbar-error {
+  @include snackbar-default;
+  background: linear-gradient(90deg, #E56565, #A02D2D);
+}
+
+.snackbar-warn {
+  @include snackbar-default;
+  background: linear-gradient(90deg, #EFF325, #EB9D06);
+}
+

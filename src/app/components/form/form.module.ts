@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { NetworkModule } from "../network/network.module";
 import { FormComponent } from "./form.component";
 
@@ -10,6 +11,7 @@ import { FormComponent } from "./form.component";
     FormsModule,
     ReactiveFormsModule,
     NetworkModule,
+    MatSnackBarModule,
   ],
   declarations: [FormComponent],
   exports: [FormComponent]
