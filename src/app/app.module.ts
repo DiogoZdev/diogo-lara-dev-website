@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutModule } from './components/about/about.module';
 import { FormModule } from './components/form/form.module';
 import { GradientLineModule } from './components/gradient-line/gradient-line.module';
 import { HeaderModule } from './components/header/header.module';
@@ -20,6 +21,7 @@ import { ThemeService } from './services/theme.service';
     GradientLineModule,
     MenuModule,
     HeaderModule,
+    AboutModule,
     FormModule,
   ],
   providers: [ThemeService],
