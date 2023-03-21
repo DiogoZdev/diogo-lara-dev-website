@@ -6,7 +6,7 @@
   --bg-dark-200: #1a1a1a;
   
   --bg-light-100: #f4f4f4;
-  --bg-light-200: #e0e0e0;
+  --bg-light-200: #e5e5e5;
 
   --font-light: #272727;
   --font-dark: #b9b9b9;
@@ -26,7 +26,7 @@ body.light {
   --icon-filter: invert(100%);
   --icon-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(92%) saturate(2462%) hue-rotate(273deg) brightness(70%) contrast(97%);
 
-  --shadow: 0 4px 4px #2221;
+  --shadow: 4px 4px 4px #2221;
 }
 
 body.dark {
