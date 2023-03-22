@@ -31,7 +31,7 @@ export class MenuComponent implements OnInit {
 
   setThemeIcon() {
     const theme = this.themeService.getTheme();
-    this.themeIcon = theme === 'dark' ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg'
+    this.themeIcon = theme === 'dark' ? 'assets/icons/sun.svg' : 'assets/icons/moon.svg'
   }
 
   setLanguage(lang: 'ENG'|'ESP'|'PORT') {
