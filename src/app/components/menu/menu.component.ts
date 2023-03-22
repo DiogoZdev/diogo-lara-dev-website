@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { LanguageService } from "src/app/services/language.service";
 import { ThemeService } from "src/app/services/theme.service";
 
 @Component({
@@ -11,11 +12,13 @@ export class MenuComponent implements OnInit {
   themeIcon = ''
 
   constructor(
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private languageService: LanguageService,
   ) {}
 
   ngOnInit() {
-    this.setThemeIcon()
+    this.setThemeIcon();
+    this.languageService.checkLanguage();
   }
 
   toggleTheme() {
@@ -31,6 +34,8 @@ export class MenuComponent implements OnInit {
     this.themeIcon = theme === 'dark' ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg'
   }
 
-  changeLanguage() {}
+  setLanguage(lang: 'ENG'|'ESP'|'PORT') {
+    this.languageService.setLanguage(lang)
+  }
 
 }

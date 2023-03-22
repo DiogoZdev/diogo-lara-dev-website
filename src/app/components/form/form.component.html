@@ -1,28 +1,28 @@
 <div class="form-area">
   <form [formGroup]="form">
-    <h2>Entre em contato</h2>
+    <h2>{{ "FORM.TITLE" | translate }}</h2>
       <div class="inputs">
         <div class="input-area">
-          <input placeholder="Nome" type="text" formControlName="name">
+          <input [placeholder]="'FORM.NAME' | translate" type="text" formControlName="name">
         </div>
         <div class="small-inputs">
           <div class="input-area">
-            <input placeholder="Email" type="text" formControlName="email">
+            <input [placeholder]="'FORM.EMAIL' | translate" type="text" formControlName="email">
           </div>
           <div class="input-area">
-            <input placeholder="Telefone (opcional)" type="text" formControlName="phone">
+            <input [placeholder]="'FORM.PHONE' | translate" type="text" formControlName="phone">
           </div>
         </div>
         <div class="input-area">
-          <input placeholder="Empresa (opcional)" type="text" formControlName="company">
+          <input [placeholder]="'FORM.COMPANY' | translate" type="text" formControlName="company">
         </div>
         <div class="input-area">
-          <textarea placeholder="Mensagem ..." rows="8" maxlength="1000" formControlName="message" ></textarea>
+          <textarea [placeholder]="'FORM.MESSAGE' | translate" rows="8" maxlength="1000" formControlName="message" ></textarea>
         </div>
         <div class="counter">{{form.get('message')?.value.length}} /1000</div>
       </div>
       <div class="button-area">
-        <button class="send" (click)="sendFormResponse()">enviar</button>
+        <button class="send" (click)="sendFormResponse()">{{ "FORM.SEND" | translate }}</button>
       </div>
   </form>
 </div>

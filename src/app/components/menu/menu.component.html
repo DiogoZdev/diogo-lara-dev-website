@@ -1,14 +1,16 @@
 <nav class="menu">
   <div class="center ">
     <div class="languages">
-      <!-- TO DO: Finish implementation 
-        <button>
-          <button>ENG</button>
+        <button (click)="setLanguage('ENG')">
+          <span>ENG</span>
         </button>
-        <button>
-          <button>POR</button>
+        <button (click)="setLanguage('PORT')">
+          <span>PORT</span>
+        </button>
+        <button (click)="setLanguage('ESP')">
+          <span>ESP</span>
         </button> 
-      -->
+     
     </div>
     <button (click)="toggleTheme()">
       <img [src]="themeIcon" alt="theme">

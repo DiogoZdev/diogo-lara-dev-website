@@ -1,0 +1,70 @@
+{
+  "ENG": "",
+  "PORT": "",
+  "ESP": "",
+
+  "ABOUT": {
+    "TITLE": {
+      "ENG": "A little beyond the code",
+      "PORT": "Um pouco além do código",
+      "ESP": "Un poco más que códigos"
+    },
+    "P1": {
+      "ENG": "With over 10 years of passion for language learning, I'm always looking for new ways to explore different cultures and communicate with people around the world. I'm a native Portuguese speaker, and currently, I'm fluent in English, have an advanced knowledge of Spanish, and I am studying Italian.",
+      "PORT": "Com mais de 10 anos de paixão pelo aprendizado de idiomas, estou sempre em busca de novas formas de explorar diferentes culturas e me comunicar com pessoas de todo o mundo. Atualmente sou fluente em Ingês, tenho um conhecimento avançado em Espanhol e estou estudando Italiano.",
+      "ESP": "Con más de 10 años de pasión por el aprendizaje de idiomas, siempre estoy buscando nuevas formas de explorar diferentes culturas y comunicarme con personas de todo el mundo. Actualmente, hablo inglés con fluidez, tengo un conocimiento avanzado de español y estoy estudiando italiano."
+    },
+    "P2": {
+      "ENG": "Since 2017, I've had the opportunity to put my passion into practice and work with people from different nationalities. This experience has allowed me to develop valuable interpersonal and intercultural skills, as well as learn to adapt my communication to different contexts.",
+      "PORT": "A partir de 2017, tive a oportunidade de colocar em prática o que amo e trabalhar com pessoas de diversas nacionalidades. Essa experiência me permitiu desenvolver habilidades interpessoais e interculturais valiosas, além de aprender a adaptar minha comunicação para diferentes contextos.",
+      "ESP": "A partir de 2017, tuve la oportunidad de poner en práctica lo que amo y trabajar con personas de diversas nacionalidades. Esta experiencia me permitió desarrollar habilidades interpersonales e interculturales valiosas, además de aprender a adaptar mi comunicación a diferentes contextos."
+    },
+    "P3": {
+      "ENG": "My commitment to creating quality digital solutions for a global audience is a natural extension of this passion. With my language experience and skills, I'm able to create internationalized products that are accessible and understandable to people from different backgrounds.",
+      "PORT": "Meu comprometimento em criar soluções digitais de qualidade para uma audiência global é uma extensão natural dessa paixão. Com minha experiência e aprendizados em idiomas, sou capaz de criar produtos internacionalizados que sejam acessíveis e compreensíveis para pessoas de diferentes origens.",
+      "ESP": "Mi compromiso de crear soluciones digitales de calidad para una audiencia global es una extensión natural de esta pasión. Con mi experiencia y conocimientos en idiomas, puedo crear productos internacionalizados que sean accesibles y comprensibles para personas de diferentes orígenes."
+    },
+    "P4": {
+      "ENG": "If you're looking for a developer who can ensure that your product is effective worldwide, I'm available to help.",
+      "PORT": "Se você está procurando um desenvolvedor que possa garantir que seu produto seja eficaz em grande parte do mundo, estou à disposição para ajudar.",
+      "ESP": "Si está buscando un desarrollador que pueda garantizar que su producto sea efectivo en todo el mundo, estoy disponible para ayudar."
+    }
+  },
+  "FORM": {
+    "TITLE": {
+      "ENG": "Get in touch",
+      "PORT": "Entre em contato",
+      "ESP": "Contáctame"
+    },
+    "NAME": {
+      "ENG": "Name",
+      "PORT": "Nome",
+      "ESP": "Nombre"
+    },
+    "EMAIL": {
+      "ENG": "Email",
+      "PORT": "Email",
+      "ESP": "Correo"
+    },
+    "PHONE": {
+      "ENG": "Phone (optional)",
+      "PORT": "Telefone (opcional)",
+      "ESP": "Teléfono (opcional)"
+    },
+    "COMPANY": {
+      "ENG": "Company (optional)",
+      "PORT": "Empresa (opcional)",
+      "ESP": "Empresa (opcional)"
+    },
+    "MESSAGE": {
+      "ENG": "Message ...",
+      "PORT": "Mensagem ...",
+      "ESP": "Mensage..."
+    },
+    "SEND": {
+      "ENG": "send",
+      "PORT": "enviar",
+      "ESP": "enviar"
+    }
+  }
+}
