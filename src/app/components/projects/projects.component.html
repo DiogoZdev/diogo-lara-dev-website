@@ -1,0 +1,28 @@
+<div>
+  <div class="center">
+    <h2 class="gradient-text">{{ "PROJECTS.TITLE" | translate }}</h2>
+    <div class="projects-area">
+
+      <ng-container *ngFor="let project of projects">
+        <div class="project-card">
+          <div class="project-background">
+            <img [src]="project.images[0]" alt="">
+            <div *ngIf="project.hasStar" class="star">⭐</div>
+          </div>
+          <div class="project-info">
+            <h3>{{ project.title }}</h3>
+            <div class="project-links">
+              <a *ngIf="project.hasWebsite" class="project-link" [href]="project.link" target="_blank">
+                <img src="assets/icons/globe.svg" alt="">
+              </a>
+              <a class="project-link" [href]="project.github" target="_blank">
+                <img src="assets/icons/github.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+    </div>
+  </div>
+</div>

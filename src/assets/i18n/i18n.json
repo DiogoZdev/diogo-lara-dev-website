@@ -30,6 +30,13 @@
       "ESP": "Si está buscando un desarrollador que pueda garantizar que su producto sea efectivo en todo el mundo, estoy disponible para ayudar."
     }
   },
+  "PROJECTS": {
+    "TITLE": {
+      "ENG": "Projects",
+      "PORT": "Projetos",
+      "ESP": "Proyectos"
+    }
+  },
   "FORM": {
     "TITLE": {
       "ENG": "Get in touch",
