@@ -1,19 +1,23 @@
 <nav class="menu">
   <div class="center ">
-    <div class="languages">
-        <button (click)="setLanguage('ENG')">
-          <span>ENG</span>
-        </button>
-        <button (click)="setLanguage('PORT')">
-          <span>PORT</span>
-        </button>
-        <button (click)="setLanguage('ESP')">
-          <span>ESP</span>
-        </button> 
+    <div class="pages">
+        
      
     </div>
-    <button (click)="toggleTheme()">
-      <img [src]="themeIcon" alt="theme">
-    </button>
+    <div class="buttons">
+      <button class="icon" (click)="toggleTheme()">
+        <img [src]="themeIcon" alt="theme">
+      </button>
+
+      <div class="icon languages">
+        <img src="assets/icons/translation.svg" alt="translation">
+
+        <div class="language-selector">
+          <button *ngFor="let lang of languages" (click)="setLanguage(lang.code)">
+            <span class="option">{{ lang.name }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>

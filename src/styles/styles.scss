@@ -10,6 +10,10 @@
   font-family: 'Sanchez', monospace;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1,h2,h3 {
   display: block;
   width: fit-content;

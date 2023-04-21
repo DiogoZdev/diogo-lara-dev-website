@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "src/app/services/language.service";
 import { ThemeService } from "src/app/services/theme.service";
+import { ILanguage, Language } from "./types/languages";
 
 @Component({
   templateUrl: './menu.component.html',
@@ -10,6 +11,12 @@ import { ThemeService } from "src/app/services/theme.service";
 export class MenuComponent implements OnInit {
 
   themeIcon = ''
+
+  languages: ILanguage[] = [
+    { code: Language.PORT, name: 'Português' },
+    { code: Language.ENG, name: 'English' },
+    { code: Language.ESP, name: 'Español' },
+  ];
 
   constructor(
     private themeService: ThemeService,
@@ -34,7 +41,7 @@ export class MenuComponent implements OnInit {
     this.themeIcon = theme === 'dark' ? 'assets/icons/sun.svg' : 'assets/icons/moon.svg'
   }
 
-  setLanguage(lang: 'ENG'|'ESP'|'PORT') {
+  setLanguage(lang: Language) {
     this.languageService.setLanguage(lang)
   }
 
