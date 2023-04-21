@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { LanguageService } from "src/app/services/language.service";
 import { ThemeService } from "src/app/services/theme.service";
 import { ILanguage, Language } from "./types/languages";
+import { Router } from "@angular/router";
 
 @Component({
   templateUrl: './menu.component.html',
@@ -21,6 +22,7 @@ export class MenuComponent implements OnInit {
   constructor(
     private themeService: ThemeService,
     private languageService: LanguageService,
+    private router: Router,
   ) {}
 
   ngOnInit() {
@@ -45,4 +47,7 @@ export class MenuComponent implements OnInit {
     this.languageService.setLanguage(lang)
   }
 
+  navigate(page: string) {
+    this.router.navigate([page])
+  }
 }

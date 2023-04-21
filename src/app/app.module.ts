@@ -11,6 +11,8 @@ import { MenuModule } from './components/menu/menu.module';
 import { ThemeService } from './services/theme.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsModule } from './components/projects/projects.module';
+import { HomeModule } from './pages/home/home.module';
+import { BlogModule } from './pages/blog/blog.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ProjectsModule } from './components/projects/projects.module';
     FormModule,
     BrowserAnimationsModule,
     ProjectsModule,
+    HomeModule,
+    BlogModule,
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

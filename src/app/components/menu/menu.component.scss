@@ -11,6 +11,15 @@
     width: fit-content;
     display: flex;
     gap: 2rem;
+
+    .page {
+      color: var(--text);
+
+      &:hover {
+        cursor: pointer;
+        color: var(--color-accent);
+      }
+    }
   }
 
   .buttons {

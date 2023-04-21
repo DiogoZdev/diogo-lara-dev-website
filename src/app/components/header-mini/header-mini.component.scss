@@ -1,0 +1,23 @@
+header {
+  padding: 1rem 0;
+
+  .center {
+    width: fit-content;
+
+  }
+
+  .diogo {
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  h1,h2 {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--text);
+  }
+}
