@@ -73,5 +73,12 @@
       "PORT": "enviar",
       "ESP": "enviar"
     }
+  },
+  "BLOG": {
+    "LANGUAGE": {
+      "ENG": "Language",
+      "PORT": "Idioma",
+      "ESP": "Idioma"
+    }
   }
 }

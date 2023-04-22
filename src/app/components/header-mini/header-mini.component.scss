@@ -3,12 +3,11 @@ header {
 
   .center {
     width: fit-content;
-
   }
 
   .diogo {
     width: 180px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   h1,h2 {
@@ -17,7 +16,7 @@ header {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text);
   }
 }
