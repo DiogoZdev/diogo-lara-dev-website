@@ -7,5 +7,12 @@ export const recentPosts: IRecentPost[] = [
     title: "Preciso falar inglês para ser programador?",
     url: "saber-ingles",
     preview: "",
+  },
+  {
+    date: "01/05/2023",
+    language: "English",
+    title: "How to choose the technologies to work with?",
+    url: "choosing-technologies",
+    preview: "",
   }
 ] 

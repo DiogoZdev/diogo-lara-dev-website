@@ -1,7 +1,8 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { BlogComponent } from "./blog.component";
-import { SaberInglesComponent } from "./posts/saber-ingles/saber-ingles.component";
+import { SaberInglesComponent } from "./posts/01-saber-ingles/saber-ingles.component";
+import { WhatToChooseComponent } from "./posts/02-what-to-choose/what-to-choose.component";
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'saber-ingles',
     component: SaberInglesComponent
+  },
+  {
+    path: 'choosing-technologies',
+    component: WhatToChooseComponent
   }
 ]
 
