@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Language } from "src/app/components/menu/types/languages";
 
 @Component({
@@ -12,25 +13,29 @@ export class PostCardComponent implements OnInit {
   @Input() postLanguage!: string;
   @Input() postDate!: string;
   @Input() postPreview!: string;
+  @Input() postUrl!: string;
 
   public day = "";
   public month = "";
   public year = "";
 
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
-      let date: string[] = [];
-      if (this.postDate.includes("-")) date = this.postDate.split("-");
-      if (this.postDate.includes("/")) date = this.postDate.split("/");
+    let date: string[] = [];
+    if (this.postDate.includes("-")) date = this.postDate.split("-");
+    if (this.postDate.includes("/")) date = this.postDate.split("/");
 
-      if (date[0] > date[2]) {
-        date = date.reverse();
-      }
+    if (Number(date[0]) > Number(date[2])) {
+      date = date.reverse();
+    }
 
-      console.log(date)
+    [this.day, this.month, this.year] = [date[0], date[1], date[2]];
+  }
 
-      this.day = date[0];
-      this.month = date[1];
-      this.year = date[2];
+  openPost(url: string) {
+    this.router.navigate([`blog/${url}`]);
   }
 }

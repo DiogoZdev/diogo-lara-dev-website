@@ -4,6 +4,10 @@
   margin: 0 auto;
   gap: 2.5rem;
 
+  li {
+    list-style: none;
+  }
+
   a {
     display: flex;
     justify-content: center;

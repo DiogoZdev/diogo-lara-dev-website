@@ -1,44 +1,13 @@
 <app-header-mini></app-header-mini>
 
-<div class="center">
+<div class="posts-list">
 
-
-  <app-post-card
-    postDate="20/04/2023"
-    postTitle="Quanto de inglês devo saber para ser programador?"
-    postPreview=".. ....... ..... ...... ..."
-    postLanguage="PORT"
+  <app-post-card *ngFor="let post of posts"
+    [postDate]="post.date"
+    [postTitle]="post.title"
+    [postPreview]="post.preview"
+    [postLanguage]="post.language"
+    [postUrl]="post.url"
   ></app-post-card>
-
-  <app-post-card
-    postDate="20/04/2023"
-    postTitle="Quanto de inglês devo saber para ser programador?"
-    postPreview=".. ....... ..... ...... ..."
-    postLanguage="PORT"
-  ></app-post-card>
-
-  <app-post-card
-    postDate="20/04/2023"
-    postTitle="Quanto de inglês devo saber para ser programador?"
-    postPreview=".. ....... ..... ...... ..."
-    postLanguage="PORT"
-  ></app-post-card>
-
-  <app-post-card
-    postDate="20/04/2023"
-    postTitle="Quanto de inglês devo saber para ser programador?"
-    postPreview=".. ....... ..... ...... ..."
-    postLanguage="PORT"
-  ></app-post-card>
-
-  <app-post-card
-    postDate="20/04/2023"
-    postTitle="Quanto de inglês devo saber para ser programador?"
-    postPreview=".. ....... ..... ...... ..."
-    postLanguage="PORT"
-  ></app-post-card>
-
-
-
 
 </div>

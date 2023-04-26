@@ -30,8 +30,8 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
+p {
+  text-indent: 1ch;
 }
 
 img {
@@ -44,6 +44,7 @@ img {
   max-width: 1000px;
   padding: 2rem;
   margin: 0 auto;
+  color: var(--text);
 
   @Media (max-width: 600px) {
     padding: 1rem;
@@ -81,3 +82,14 @@ img {
   background: linear-gradient(90deg, #EFF325, #EB9D06);
 }
 
+pre {
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  color: #aaa;
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
