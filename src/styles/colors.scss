@@ -1,6 +1,9 @@
 :root {
-  --theme-purple: #9e29c8;
-  --theme-green: #00db8c;
+  --theme-accent-1: hsl(342, 96%, 40%);
+  --theme-accent-2: hsl(22, 94%, 60%);
+
+  --theme-accent-1-light: hsla(330, 96%, 40%, 0.333);
+  --theme-accent-2-light: hsla(33, 94%, 60%, 0.333);
   
   --bg-dark-100: #0d0d0d;
   --bg-dark-200: #1a1a1a;
@@ -11,21 +14,25 @@
   --font-light: #272727;
   --font-dark: #b9b9b9;
   
-  --gradient: linear-gradient(90deg, var(--theme-purple), var(--theme-green));
+  --gradient: linear-gradient(90deg, var(--theme-accent-1), var(--theme-accent-2));
+}
+
+body {
+  --icon-filter-hover: brightness(0) saturate(100%) invert(62%) sepia(92%) saturate(2170%) hue-rotate(335deg) brightness(95%) contrast(96%);
 }
 
 body.light {
   background: var(--bg-100);
   --text: var(--font-light);
 
-  --color-accent: var(--theme-purple);
+  --color-accent: var(--theme-accent-1);
 
   --bg-100: var(--bg-light-100);
   --bg-200: var(--bg-light-200);
 
   --icon-filter: invert(100%);
-  --icon-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(92%) saturate(2462%) hue-rotate(273deg) brightness(70%) contrast(97%);
-
+  // --icon-filter-hover: brightness(0) saturate(100%) invert(20%) sepia(92%) saturate(2462%) hue-rotate(273deg) brightness(70%) contrast(97%);
+  
   --shadow: 4px 4px 4px #2221;
 }
 
@@ -33,14 +40,12 @@ body.dark {
   background: var(--bg-100);
   --text: var(--font-dark);
 
-  --color-accent: var(--theme-green);
+  --color-accent: var(--theme-accent-2);
 
   --bg-100: var(--bg-dark-100);
   --bg-200: var(--bg-dark-200);
 
   --icon-filter: invert(0%);
-  --icon-filter-hover: brightness(0) saturate(100%) invert(58%) sepia(93%) saturate(1193%) hue-rotate(111deg) brightness(97%) contrast(101%);
-
 
   --shadow: none;
 }

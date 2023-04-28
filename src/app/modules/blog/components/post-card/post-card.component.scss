@@ -9,7 +9,7 @@
   color: var(--text);
   
   &:hover {
-    outline: 2px solid var(--theme-green);
+    outline: 2px solid var(--theme-accent-2);
     outline-offset: 5px;
     cursor: pointer;
   }
@@ -18,7 +18,7 @@
     width: 80px;
     display: grid;
     place-content: center;
-    border-right: 2px solid var(--theme-green);
+    border-right: 2px solid var(--theme-accent-2);
     line-break: unset;
 
     .date {
@@ -33,7 +33,7 @@
 
       .day, .month {
         font-size: 1.7rem;
-        border-bottom: solid 2px var(--theme-green);
+        border-bottom: solid 2px var(--theme-accent-2);
       }
 
       .year {
