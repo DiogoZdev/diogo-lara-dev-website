@@ -32,7 +32,7 @@ form {
     .counter {
       display: flex;
       justify-content: flex-end;
-      color: var(--theme-purple);
+      color: var(--theme-accent-1);
       font-size: 14px;
       transform: translateY(-20xpx);
     }
@@ -68,7 +68,7 @@ form {
 
   .send {
     padding: .8em 1.6em;
-    background: hsl(191, 50%, 42%);
+    background: var(--theme-accent-1);
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -76,11 +76,7 @@ form {
     cursor: pointer;
 
     &:hover {
-      background: hsl(191, 50%, 30%);
-    }
-
-    &:active {
-      background: hsl(191, 50%, 20%);
+      background: var(--theme-accent-1-light);
     }
   }
 }
