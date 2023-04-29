@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
+import { BlogComponent } from './modules/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'blog',
-    loadChildren: () => import("./modules/blog/blog.module").then(m => m.BlogModule)
+    component: BlogComponent,
   },
   {
     path: '**',
