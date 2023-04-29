@@ -9,7 +9,7 @@ export const recentPosts: IRecentPost[] = [
     preview: "Programação parece legal, mas não sei falar inglês, só o básico do básico. Será que é pra mim?",
   },
   {
-    date: "01/05/2023",
+    date: "28/04/2023",
     language: "English",
     title: "How to choose the technologies to work with?",
     url: "choosing-technologies",
