@@ -14,7 +14,6 @@ form {
   width: 100%;
   max-width: 500px;
   padding: 2rem;
-  box-shadow: var(--shadow);
 
   h2 {
     background: var(--gradient);
@@ -53,6 +52,7 @@ form {
       color: var(--text);
       padding: 10px;
       resize: none;
+      border-bottom: solid 2px  var(--theme-accent-2);
 
       &:invalid {
         border-bottom: solid 2px red;
