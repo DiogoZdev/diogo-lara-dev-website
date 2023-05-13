@@ -2,8 +2,8 @@
   --theme-accent-1: hsl(342, 96%, 40%);
   --theme-accent-2: hsl(22, 94%, 60%);
 
-  --theme-accent-1-light: hsla(330, 96%, 40%, 0.333);
-  --theme-accent-2-light: hsla(33, 94%, 60%, 0.333);
+  --theme-accent-1-light: hsla(330, 96%, 40%, 0.15);
+  --theme-accent-2-light: hsla(33, 94%, 60%, 0.2);
   
   --bg-dark-100: #0d0d0d;
   --bg-dark-200: #1a1a1a;
@@ -15,6 +15,7 @@
   --font-dark: #b9b9b9;
   
   --gradient: linear-gradient(90deg, var(--theme-accent-1), var(--theme-accent-2));
+  --gradient-transparent: linear-gradient(90deg, var(--theme-accent-1-light), var(--theme-accent-2-light));
 }
 
 body {

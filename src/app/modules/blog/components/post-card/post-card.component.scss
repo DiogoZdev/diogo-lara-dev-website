@@ -5,46 +5,44 @@
 .post-card {
   display: flex;
   flex-direction: row;
-  border-radius: .5rem;
   color: var(--text);
-  
+  transition: background linear 300ms;
+
   &:hover {
-    outline: 2px solid var(--theme-accent-2);
-    outline-offset: 5px;
+    background: var(--gradient-transparent);
     cursor: pointer;
   }
-  
+
   .date-area {
     width: 80px;
     display: grid;
     place-content: center;
-    border-right: 2px solid var(--theme-accent-2);
+    // border-right: 2px solid var(--theme-accent-2);
     line-break: unset;
 
     .date {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: .8rem;
+      font-size: 0.8rem;
       // transform: rotate(90deg);
-      background: var(--gradient);
-      color: transparent;
-      background-clip: text;
+      color: var(--theme-accent-1);
 
-      .day, .month {
+      .day,
+      .month {
         font-size: 1.7rem;
-        border-bottom: solid 2px var(--theme-accent-2);
+        border-bottom: solid 2px var(--theme-accent-1);
       }
 
       .year {
-        padding-top: .3rem;
+        padding-top: 0.3rem;
         font-weight: bold;
       }
     }
   }
-  
+
   .post-info {
-    padding: .5rem;
+    padding: 0.5rem;
 
     p {
       padding: unset;
