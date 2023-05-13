@@ -8,10 +8,10 @@
   --bg-dark-100: #0d0d0d;
   --bg-dark-200: #1a1a1a;
   
-  --bg-light-100: #f4f4f4;
-  --bg-light-200: #e5e5e5;
+  --bg-light-100: hsl(30, 50%, 88%);
+  --bg-light-200: hsl(30, 50%, 82%);
 
-  --font-light: #272727;
+  --font-light: hsl(30, 69%, 4%);
   --font-dark: #b9b9b9;
   
   --gradient: linear-gradient(90deg, var(--theme-accent-1), var(--theme-accent-2));
